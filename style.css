@@ -1,0 +1,52 @@
+/* Body styling to fit the background image properly */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center fixed; /* Add your background image */
+    background-size: cover;  /* Ensures the background covers the entire area */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Game area */
+#gameArea {
+    width: 400px;
+    height: 600px;
+    border: 2px solid #000;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.2);  /* Optional: Adding transparency over the background */
+    backdrop-filter: blur(3px);  /* Optional: To blur the background */
+}
+
+/* Basket */
+#basket {
+    position: absolute;
+    bottom: 0;
+    width: 300px; /* Increase size of the basket */
+    height: 300px; /* Increase size of the basket */
+    background-image: url('boy.png');  /* Use a transparent PNG image for the basket */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Ball */
+#ball {
+    position: absolute;
+    top: 0;
+    width: 80px; /* Increase size of the ball */
+    height: 80px; /* Increase size of the ball */
+    background-image: url('ball.png');  /* Use a transparent PNG image for the ball */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* Scoreboard */
+.scoreboard {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;  /* Increased size */
+    font-weight: bold; /* Make it bold */
+    color: black;      /* Text color */
+}
